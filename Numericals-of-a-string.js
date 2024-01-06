@@ -32,3 +32,17 @@ function numericals(input) {
 }
 
 // or
+
+const numericals = (str, seen = {}) =>
+  str.replace(/./g, char => 
+    seen[char] = (seen[char] || 0) + 1)
+
+// or
+
+const numericals = s => {
+  const occ = {}
+  return s.split('').reduce((res, ch) => {
+    occ[ch] = (occ[ch] || 0) + 1
+    return `${res}${occ[ch]}`
+  }, '')
+}
