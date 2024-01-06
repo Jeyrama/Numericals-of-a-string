@@ -12,3 +12,6 @@ Examples:
 
 Note: There might be some non-ascii characters in the string.
 */
+
+
+// Solution
