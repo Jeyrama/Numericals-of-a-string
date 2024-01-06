@@ -30,3 +30,5 @@ function numericals(input) {
   }
   return result;
 }
+
+// or
